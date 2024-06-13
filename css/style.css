@@ -1,0 +1,157 @@
+/* ---Fonts imports--- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* ---color varibles--- */
+:root {
+    --color__principal: #ffffff;
+    --color__secundario: #1f4b52ef;
+    --color__terciario: #6e6666;
+
+    /* ---Colores basicos--- */
+    --color__blanco: white;
+    --color__negro: black;
+}
+
+nav {
+    background: var(--color__secundario);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: var(--color__blanco);
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 12px;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 7px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav ul li a {
+    color: var(--color__principal);
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a:hover {
+    background-color: var(--color__blanco);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: var(--color__blanco);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ---Sección de imagen bienvenida--- */
+
+check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 15px;
+        padding-left: 50px;
+
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--color__secundario);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 19px;
+    }
+
+    a:hover {
+        background: var(--color__secundario);
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.hero {
+    background: linear-gradient(to bottom,  #63eff966, #fffdfd58), 
+    url(../img/imagen-grecia_1.png);
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    border: 5px outset #C757C2;
+    border-radius: 0px 0px 40px 0px;
+}
+
+h2 {
+    color: var(--color__blanco);
+    font-size: 34px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h3 {
+    color: var(--color__blanco);
+    font-size: 22px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
