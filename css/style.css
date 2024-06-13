@@ -28,6 +28,8 @@ nav {
     background: var(--color__secundario);
     height: 80px;
     width: 100%;
+    position: fixed;
+    z-index: 9;
 }
 
 label.logo {
@@ -72,7 +74,6 @@ a:hover {
     cursor: pointer;
     display: none;
 }
-
 
 /* ---Sección de imagen bienvenida--- */
 
@@ -144,6 +145,7 @@ h2 {
     top: 30%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
 }
 
 h3 {
@@ -153,5 +155,82 @@ h3 {
     top: 35%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+.flex__container {
+    background-color: rgb(237, 246, 246);
+    border: 5px solid rgb(83, 230, 252);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 16px;
+    -webkit-box-shadow: 14px 14px 4px -1px rgba(133,131,133,1);
+    -moz-box-shadow: 14px 14px 4px -1px rgba(133,131,133,1);
+    box-shadow: 14px 14px 4px -1px rgba(133,131,133,1);
+}
+
+
+.box__01 {
+    background-color: var(--color__primario);
+    background: linear-gradient(to bottom, #0373f44d, #d400ff7d), url("https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align:center;
+    border: solid rgb(255, 255, 255) 5px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.box__02 {
+    background-color: var(--color__secundario);
+    background: linear-gradient(to bottom, #0bc1f95a, #33f6025e), url("https://images.unsplash.com/photo-1620815023653-f65690227267?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align:center;
+    border: solid rgb(255, 255, 255) 5px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.box__03 {
+    background-color: var(--color__primario);
+    background: linear-gradient(to bottom, #0373f44d, #d400ff7d), url("https://images.unsplash.com/photo-1612036781124-847f8939b154?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align:center;
+    border: solid rgb(255, 255, 255) 5px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.box__04 {
+    background-color: var(--color__secundario);
+    background: linear-gradient(to bottom, #0373f44d, #d400ff7d), url("https://images.unsplash.com/photo-1587302912306-cf1ed9c33146?q=80&w=1580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align:center;
+    border: solid rgb(255, 255, 255) 5px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
 }
 
