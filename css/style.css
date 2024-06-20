@@ -13,6 +13,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 /* ---color varibles--- */
 :root {
     --color__principal: #ffffff;
@@ -75,6 +76,13 @@ a:hover {
     display: none;
 }
 
+/* carrusell bootstrap */
+
+.carousel-inner {
+    width: 100%;
+    height: 400px;
+}
+
 /* ---Sección de imagen bienvenida--- */
 
 #check {
@@ -98,7 +106,8 @@ a:hover {
         display: block;
     }
 
-    ul {
+/* agregue el nav */
+    nav ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -107,7 +116,7 @@ a:hover {
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 1;
+        z-index: 2;
     }
 
     nav ul li {
@@ -138,7 +147,7 @@ a:hover {
     border-radius: 0px 0px 40px 0px;
 }
 
-h2 {
+.texto__inicio h2 {
     color: var(--color__blanco);
     font-size: 34px;
     position: absolute;
@@ -148,7 +157,7 @@ h2 {
     z-index: 1;
 }
 
-h3 {
+.texto__inicio h3 {
     color: var(--color__blanco);
     font-size: 22px;
     position: absolute;
@@ -157,6 +166,46 @@ h3 {
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
 }
+
+.texto__caja p {
+    color: var(--color__negro);
+    font-size: 19px;
+    justify-content: center;
+}
+
+.texto__caja {
+    font-size: 19px;
+    color: var(--color__negro);
+}
+
+@media (max-width: 720px) {
+    .contenido__principal img {
+        max-width: 100%;
+    }
+}
+
+/* Contenido Principal */
+
+.contenedor {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contenedor .contenido__principal {
+    width: 80%;
+    margin: 3% 0;
+}
+
+.contenedor .contenido__principal img {
+    max-width: 100%;
+    border-radius: 12px;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+
 .flex__container {
     background-color: rgb(237, 246, 246);
     border: 5px solid rgb(83, 230, 252);
@@ -273,7 +322,7 @@ h3 {
         padding: 15px;
     }
 
-    .footer .contenido__footer ul li a{
+    .footer .contenido__footer ul li {
         display: block;
         margin: 20px 0;
         text-align: left;
