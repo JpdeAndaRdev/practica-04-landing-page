@@ -78,9 +78,10 @@ a:hover {
 
 /* carrusell bootstrap */
 
-.carousel-inner {
+.carousel-inner  {
     width: 100%;
     height: 400px;
+    
 }
 
 /* ---Sección de imagen bienvenida--- */
@@ -116,7 +117,7 @@ a:hover {
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 2;
+        z-index: 1;
     }
 
     nav ul li {
