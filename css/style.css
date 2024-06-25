@@ -206,7 +206,63 @@ a:hover {
     margin-bottom: 5%;
 }
 
+/* Tarjetas */
 
+.contenedor__tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.tarjeta {
+    width: 325px;
+    background-color: var(--color__principal);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.contenido__tarjeta {
+    padding: 20px;
+
+}
+
+.contenido__tarjta h1 {
+    font-size: 20px;
+    color: var(--color__secundario);
+}
+
+.contenido__tarjeta p {
+    font-size: 17px;
+    color: var(--color__terciario);
+}
+
+.boton__tarjeta {
+    display: inline-block;
+    background-color: var(--color__secundario);
+    color: var(--color__blanco);
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.boton__tarjeta:hover {
+    color: #3895a3ef;
+    background-color: var(#ee0fa7);
+}
+
+
+
+/* padre */
 .flex__container {
     background-color: rgb(237, 246, 246);
     border: 5px solid rgb(83, 230, 252);
