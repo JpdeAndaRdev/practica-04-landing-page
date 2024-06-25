@@ -218,11 +218,16 @@ a:hover {
 }
 
 .tarjeta {
-    width: 325px;
+    width: 350px;
     background-color: var(--color__principal);
     border-radius: 20px;
     box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
     overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-30px);
 }
 
 .tarjeta img {
@@ -257,7 +262,7 @@ a:hover {
 
 .boton__tarjeta:hover {
     color: #3895a3ef;
-    background-color: var(#ee0fa7);
+    background-color: #ee0fa7;
 }
 
 
@@ -388,6 +393,23 @@ a:hover {
 
 .footer .contenido__footer {
     color: var(--color__blanco);
+}
+
+
+/* Tarjeta de la pagina fotos */
+
+.card {
+    margin: 5% auto;
+    max-width: 720px;
+    width: 90%;
+}
+
+.card img {
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 
